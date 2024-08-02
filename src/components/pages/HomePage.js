@@ -3,7 +3,7 @@ import ParticlesComponent from '../particles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from '../button.jsx';
 import './HomePage.css';
-import TypeWriter from '../TypeWriter.jsx';
+import TypeWriter from '../typewriter.jsx';
 export const HomePage = () => {
     return (
         <div className="HomePage">
