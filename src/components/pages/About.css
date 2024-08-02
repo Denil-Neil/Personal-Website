@@ -1,0 +1,23 @@
+/* src/components/pages/About.css */
+body {
+    background-color: #222222;
+    color: white; /* Optional: set the text color to white for better readability */
+    margin: 0; /* Ensure there's no margin around the body */
+    height: 100vh; /* Ensure the body covers the full viewport height */
+  }
+  
+  .about-page {
+    padding: 20px; /* Optional: add some padding for better layout */
+  }
+  
+  .logo-source {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Position the button group absolutely within the App container */
+    top: 30px; /* Distance from the top */
+    left: 20px; /* Distance from the right */
+    z-index: 2;
+  }
+  

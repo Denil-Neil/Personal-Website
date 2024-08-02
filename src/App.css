@@ -1,38 +1,60 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+.mat-badge-content {
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+
+.HomePage {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative; /* Add this to make the button-group position relative to App container */
 }
 
-.App-link {
-  color: #61dafb;
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+    position: relative;
+    font-size: 7.5em;
+    z-index: 2;
+    color: #f58f7c;
+    font-family: Helvetica, Sans-Serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: -10px; /* Negative margin to pull elements closer */
   }
-  to {
-    transform: rotate(360deg);
+  
+  h3 {
+    position: relative;
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-style: italic; 
+    color: #FFFFFF;
+    line-height: 1;
   }
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+  position: absolute; /* Position the button group absolutely within the App container */
+  top: 30px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 2;
 }
