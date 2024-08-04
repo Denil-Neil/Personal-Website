@@ -4,7 +4,6 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     git,
@@ -37,20 +36,12 @@ const technologies = [
       icon: reactjs,
     },
     {
-      name: 'Redux Toolkit',
-      icon: redux,
-    },
-    {
       name: 'Tailwind CSS',
       icon: tailwind,
     },
     {
       name: 'Node JS',
       icon: nodejs,
-    },
-    {
-      name: 'Rails',
-      icon: rubyrails,
     },
     {
       name: 'graphql',

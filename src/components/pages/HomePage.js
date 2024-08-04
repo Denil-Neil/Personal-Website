@@ -3,12 +3,13 @@ import ParticlesComponent from '../particles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from '../button.jsx';
 import './HomePage.css';
-import TypeWriter from '../TypeWriter.jsx';
+import TypeWriter from '../typewriter.jsx';
+import { useNavigate } from 'react-router-dom';
 export const HomePage = () => {
     return (
         <div className="HomePage">
-            <div className='logo-source'>
-                <img src='./logo.png' href='/' alt='Logo'/>
+            <div >
+                <img src='./logo.jpg' href='/about' alt='Logo' className='logo-source'/>
             </div>
             <ParticlesComponent className="particles" />
 
