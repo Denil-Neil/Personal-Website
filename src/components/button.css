@@ -1,31 +1,43 @@
 /* src/components/Button.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 .button {
     display: inline-block;
-    background-color: #f58f7c;
+    background-color: var(--background-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 200px;
     transition: background-color 0.3s ease;
     cursor: pointer;
     z-index: 2;
     position: relative;
+    border-radius: 200px;
+
+    --background-color: #f58f7c;
+    --border-size: 2px;
 }
 
-.button span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    z-index: 2;
+.button::before {
+    content: '';
+    position: absolute;
+    border-radius: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: var(--border-size) solid var(--background-color);
+    transition: top 100ms ease-in-out, left 100ms ease-in-out, right 100ms ease-in-out, bottom 100ms ease-in-out;
 }
 
-.button:hover {
-    background-color: #f58f7c;
-}
-
-.button:hover span {
-    transform: translateX(5px);
+.button:hover::before,
+.button:focus::before {
+    top: calc(var(--border-size) * -3); 
+    left: calc(var(--border-size) * -3);
+    right: calc(var(--border-size) * -3);
+    bottom: calc(var(--border-size) * -3);
 }

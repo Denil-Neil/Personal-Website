@@ -27,6 +27,12 @@
     top: 30px;
     left: 20px;
     z-index: 2;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-source:hover {
+    transform: scale(1.1); /* Example effect: scales the image up slightly */
+    opacity: 0.8; /* Example effect: reduces opacity */
 }
 
 h1 {

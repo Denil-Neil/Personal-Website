@@ -15,8 +15,8 @@ export const About = () => {
 
   return (
     <div className="about-page">
-        <div className='logo-source'>
-            <img src='../logo.png' href='' alt='logo'/>
+        <div >
+            <img src='../logo.jpg' href='' alt='logo' className='logo-source'/>
         </div>
       <div className="button-group">
                      <Button hrefLink="/about" text="About"/>
